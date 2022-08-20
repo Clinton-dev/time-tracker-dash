@@ -1,0 +1,72 @@
+:root {
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(226, 43%, 10%);
+    --desat-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+    --blue: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --self-care: hsl(43, 84%, 65%);
+}
+
+.container {
+    /* border: 1px solid white; */
+    width: 90%;
+    margin: 4rem auto;
+}
+
+.personal-profile {
+    background-color: hsl(241deg 42% 19%);
+    border-radius: 1rem;
+}
+
+.profile-header {
+    display: flex;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 1rem;
+}
+
+.profile-header img {
+    width: 25%;
+    margin-right: 1rem;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.profile-details {
+    padding-top: .5rem;
+}
+
+.profile-details p {
+    font-weight: 300;
+    font-size: .9em;
+}
+
+.profile-details p.username {
+    font-size: 1.25em;
+}
+
+.profile-body {
+    padding: 1rem 1.5rem;
+}
+
+.profile-body ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .profile-body li {
+    display: inline-block;
+    margin-right: 2.6rem;
+} */
+
+.profile-body a {
+    text-decoration: none;
+    color: hsl(236deg 100% 87%);
+}
