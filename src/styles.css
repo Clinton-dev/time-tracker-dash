@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Rubik:wght@300;400;700&display=swap');
+
+:root {
+    --very-dark-blue: hsl(226, 43%, 10%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--very-dark-blue);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
