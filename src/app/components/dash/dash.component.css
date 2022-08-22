@@ -70,3 +70,50 @@
     text-decoration: none;
     color: hsl(236deg 100% 87%);
 }
+
+.time-items {
+    /* border: 1px solid white; */
+    margin-top: 1rem;
+}
+
+.time-items .card .card-header {
+    height: 7vh;
+    border-radius: .7rem;
+    background-color: var(--work);
+    z-index: -1;
+    padding-right: 1rem;
+    background-image: url('../../../assets/images/icon-work.svg');
+    background-position: 90% 45%;
+    background-repeat: no-repeat;
+}
+
+/* .time-items .card .card-header img {
+    color: hsl(348, 100%, 68%);
+    float: right;
+    width: 50px;
+    height: 50px;
+    z-index: -2;
+} */
+
+.time-items .card .card-body {
+    background-color: hsl(241deg 42% 19%);
+    color: hsl(236deg 100% 87%);
+    border-radius: .7rem;
+    padding: 1rem 1.5rem;
+    margin-top: -0.9rem;
+    z-index: 1;
+}
+
+.dflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+img#ellipse {
+    font-size: .7rem;
+    height: 10px;
+}
+
+.card-title {
+    color: white;
+}
