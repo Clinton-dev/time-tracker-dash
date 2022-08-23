@@ -156,6 +156,10 @@ img#ellipse {
         width: 90%;
         margin: 4rem auto;
     }
+
+    .profile-header img {
+        width: 30%;
+    }
 }
 
 
