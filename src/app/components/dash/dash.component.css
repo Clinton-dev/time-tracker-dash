@@ -61,7 +61,7 @@
     justify-content: space-between;
 }
 
-.active {
+.profile-body a.active {
     color: white;
 }
 
@@ -148,4 +148,65 @@ img#ellipse {
 
 .card-title {
     color: white;
+}
+
+@media only screen and (max-width: 376px) {
+    .container {
+        /* border: 1px solid white; */
+        width: 90%;
+        margin: 4rem auto;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 90%;
+        column-gap: 20px;
+        display: flex;
+    }
+
+    .personal-profile {
+        flex: 1 1 35%;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .profile-header img {
+        width: 35%;
+    }
+
+    .profile-body ul {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .time-items {
+        margin-top: 0;
+    }
+
+    div.items-grid {
+        flex: 3 0 65%;
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 90%;
+        /* margin: 5rem auto; */
+    }
 }
