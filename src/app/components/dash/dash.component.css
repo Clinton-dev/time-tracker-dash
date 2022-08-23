@@ -18,6 +18,8 @@
     margin: 4rem auto;
 }
 
+/* --- User profile section --- */
+
 .personal-profile {
     background-color: hsl(241deg 42% 19%);
     border-radius: 1rem;
@@ -65,6 +67,11 @@
     color: white;
 }
 
+.profile-body a:hover {
+    color: white;
+    cursor: pointer;
+}
+
 /* .profile-body li {
     display: inline-block;
     margin-right: 2.6rem;
@@ -79,6 +86,8 @@
     /* border: 1px solid white; */
     margin-top: 1rem;
 }
+
+/* --- Card times --- */
 
 .time-items .card .card-header {
     height: 7vh;
@@ -136,6 +145,11 @@ div#item-5 {
     z-index: 1;
 }
 
+.card-body:hover {
+    cursor: pointer;
+    filter: brightness(200%);
+}
+
 .dflex {
     display: flex;
     justify-content: space-between;
@@ -146,9 +160,16 @@ img#ellipse {
     height: 10px;
 }
 
+img#ellipse:hover {
+    filter: brightness(200%);
+    cursor: pointer;
+}
+
 .card-title {
     color: white;
 }
+
+/*--- Media queries --- */
 
 @media only screen and (max-width: 376px) {
     .container {
