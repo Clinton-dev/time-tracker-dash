@@ -9,15 +9,15 @@
         </div>
         <div class="profile-body">
             <ul>
-                <li><a href="#">Daily</a></li>
-                <li><a href="#">Weekly</a></li>
-                <li><a href="#">Monthly</a></li>
+                <li><a href="#" (click)="getTimeFrames('daily')">Daily</a></li>
+                <li class="active"><a href="#" (click)="getTimeFrames('weekly')">Weekly</a></li>
+                <li><a href="#" (click)="getTimeFrames('monthly')">Monthly</a></li>
             </ul>
         </div>
     </div>
-    <div *ngFor="let item of timeItems" class="time-items">
+    <div *ngFor="let item of timeItems; let i=index" class="time-items">
         <div class="card">
-            <div class="card-header">
+            <div class="card-header" id="item-{{i}}">
                 <!-- <img src="../../../assets/images/icon-work.svg" alt="work icon"> -->
             </div>
             <div class="card-body">
@@ -26,8 +26,8 @@
                     <img src="../../../assets/images/icon-ellipsis.svg" alt="ellipses" id="ellipse">
                 </div>
                 <div class="dflex" style="margin-top: .5rem;">
-                    <h4 class="card-title">32hrs</h4>
-                    <p>Last week - 8hrs</p>
+                    <h4 class="card-title">{{item.timeframes.monthly.current}} hrs</h4>
+                    <p>Last week - {{item.timeframes.monthly.previous}}hrs</p>
                 </div>
             </div>
         </div>

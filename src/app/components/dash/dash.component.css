@@ -61,6 +61,10 @@
     justify-content: space-between;
 }
 
+.active {
+    color: white;
+}
+
 /* .profile-body li {
     display: inline-block;
     margin-right: 2.6rem;
@@ -79,12 +83,40 @@
 .time-items .card .card-header {
     height: 7vh;
     border-radius: .7rem;
-    background-color: var(--work);
     z-index: -1;
     padding-right: 1rem;
-    background-image: url('../../../assets/images/icon-work.svg');
     background-position: 90% 45%;
     background-repeat: no-repeat;
+}
+
+div#item-0 {
+    background-color: var(--work);
+    background-image: url('../../../assets/images/icon-work.svg');
+}
+
+div#item-1 {
+    background-color: var(--play);
+    background-image: url('../../../assets/images/icon-play.svg');
+}
+
+div#item-2 {
+    background-color: var(--study);
+    background-image: url('../../../assets/images/icon-study.svg');
+}
+
+div#item-3 {
+    background-color: var(--exercise);
+    background-image: url('../../../assets/images/icon-exercise.svg');
+}
+
+div#item-4 {
+    background-color: var(--social);
+    background-image: url('../../../assets/images/icon-social.svg');
+}
+
+div#item-5 {
+    background-color: var(--self-care);
+    background-image: url('../../../assets/images/icon-self-care.svg');
 }
 
 /* .time-items .card .card-header img {

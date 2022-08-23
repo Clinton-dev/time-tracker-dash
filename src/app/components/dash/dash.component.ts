@@ -8,6 +8,7 @@ import { TimeItemsService } from 'src/app/services/time-items.service';
 })
 export class DashComponent implements OnInit {
   timeItems: any = [];
+  frame: string = 'monthly';
 
   constructor(private timeItemsService: TimeItemsService) { }
 
@@ -17,6 +18,12 @@ export class DashComponent implements OnInit {
       this.timeItems = data;
     });
     console.log(this.timeItems)
+  }
+
+  getTimeFrames(period: string) {
+    // when clicked I want to change key on timeframes
+    console.log(period)
+
   }
 
 }
