@@ -2,8 +2,6 @@
 
 # Frontend Mentor -  Time tracking Dashboard component solution(Angular 14)
 
-This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -21,6 +19,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 
 ## Overview
+This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
