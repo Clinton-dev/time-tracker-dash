@@ -200,27 +200,62 @@ img#ellipse {
         height: 10vh;
     }
 
-    .dflex {
-        margin-top: 1rem;
-    }
-
     div.card-body-details {
         margin-top: 1.5rem;
         flex-direction: column;
         row-gap: 10px;
     }
+
+    h4.card-title {
+        font-size: 1.8rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .container {
-        width: 90%;
+        width: 75%;
+    }
+
+    .personal-profile {
+        flex: 1 1 20%;
+    }
+
+    div.items-grid {
+        flex: 3 0 75%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
+    }
+
+    h4.card-title {
+        font-size: 2rem;
+    }
+
+    .time-items .card .card-body {
+        padding: 2rem 1rem;
     }
 }
 
 
 @media only screen and (min-width: 1200px) {
     .container {
-        width: 90%;
-        /* margin: 5rem auto; */
+        width: 80%;
+        column-gap: 25px;
+    }
+
+    .personal-profile {
+        flex: 1 1 20%;
+    }
+
+    .profile-header {
+        height: 50%;
+        padding: 2rem 2rem;
+    }
+
+    .profile-header img {
+        width: 40%;
+    }
+
+    .profile-details p.username {
+        font-size: 2em;
     }
 }
