@@ -195,6 +195,20 @@ img#ellipse {
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
     }
+
+    .time-items .card .card-header {
+        height: 10vh;
+    }
+
+    .dflex {
+        margin-top: 1rem;
+    }
+
+    div.card-body-details {
+        margin-top: 1.5rem;
+        flex-direction: column;
+        row-gap: 10px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
