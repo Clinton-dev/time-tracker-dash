@@ -8,7 +8,12 @@ import { TimeItemsService } from 'src/app/services/time-items.service';
 })
 export class DashComponent implements OnInit {
   timeItems: any = [];
-  frame: string = 'monthly';
+  frame: any = {
+    daily: false,
+    monthly: false,
+    weekly: true
+  };
+
 
   constructor(private timeItemsService: TimeItemsService) { }
 
@@ -22,7 +27,25 @@ export class DashComponent implements OnInit {
 
   getTimeFrames(period: string) {
     // when clicked I want to change key on timeframes
-    console.log(period)
+    if (period == 'daily') {
+      return this.frame = {
+        daily: true,
+        monthly: false,
+        weekly: false
+      }
+    } if (period == 'weekly') {
+      return this.frame = {
+        daily: false,
+        monthly: false,
+        weekly: true
+      }
+    } else {
+      return this.frame = {
+        daily: false,
+        monthly: true,
+        weekly: false
+      }
+    }
 
   }
 
