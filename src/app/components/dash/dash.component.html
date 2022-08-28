@@ -30,7 +30,7 @@
                     <!-- display daily stats -->
                     <div *ngIf="frame.daily" class="dflex card-body-details" style="margin-top: .5rem;">
                         <h4 class="card-title">{{item.timeframes.daily.current}} hrs</h4>
-                        <p>Last week - {{item.timeframes.daily.previous}}hrs</p>
+                        <p>Previous day - {{item.timeframes.daily.previous}}hrs</p>
                     </div>
                     <!-- display weekly stats -->
                     <div *ngIf="frame.weekly" class="dflex card-body-details" style="margin-top: .5rem;">
@@ -40,7 +40,7 @@
                     <!-- display monthly stats -->
                     <div *ngIf="frame.monthly" class="dflex card-body-details" style="margin-top: .5rem;">
                         <h4 class="card-title">{{item.timeframes.monthly.current}} hrs</h4>
-                        <p>Last week - {{item.timeframes.monthly.previous}}hrs</p>
+                        <p>Last month - {{item.timeframes.monthly.previous}}hrs</p>
                     </div>
                 </div>
             </div>
